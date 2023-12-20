@@ -22,7 +22,7 @@ const QueOne = () => {
     [3, 4, 100],
   ];
   const max = getMaxfromArray(n, m, nums);
-  return <div>maximum value = {max}</div>;
+  return <div>question one res = {max}</div>;
 };
 
 export default QueOne;

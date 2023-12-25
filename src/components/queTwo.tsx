@@ -1,25 +1,23 @@
-// Given an array A of size N of integers. Your task is to find the sum of minimum and maximum element in the array.
+import React from "react";
 
-function getSumOfMinMax(A: number[]): number {
-  let max = A[0];
-  let min = A[0];
-  for (let val of A) {
-    if (val > max) {
-      max = val;
-    }
-    if (val < min) {
-      min = val;
-    }
+function reverseWord(str: string): string {
+  //Your code here
+  let arr = str.split("");
+  let i = 0;
+  let j = arr.length - 1;
+  while (i < j) {
+    let temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+    i++;
+    j--;
   }
-
-  return max + min;
+  str = arr.join("");
+  return str;
 }
-
 const QueTwo = () => {
-  const link =
-    "https://www.geeksforgeeks.org/problems/max-min/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=bottom_sticky_on_article";
-  const nums: number[] = [4, 17, -5, 6, -8];
-  const res = getSumOfMinMax(nums);
+  const link = "https://www.geeksforgeeks.org/problems/reverse-a-string/1";
+  const res = reverseWord("rakesh");
   return (
     <div>
       question two result = {res} (

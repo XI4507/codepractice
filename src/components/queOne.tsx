@@ -1,28 +1,34 @@
-function getMaxfromArray(cols: number, rows: number, nums: number[][]): number {
-  const arr = new Array(cols).fill(0);
-  for (let i = 0; i < rows; i++) {
-    let rowData = nums[i];
-    let a = rowData[0];
-    let b = rowData[1];
-    let k = rowData[2];
-    for (let j = a - 1; j < b; j++) {
-      arr[j] += k;
+// Given an array A of size N of integers. Your task is to find the sum of minimum and maximum element in the array.
+
+function getSumOfMinMax(A: number[]): number {
+  let max = A[0];
+  let min = A[0];
+  for (let val of A) {
+    if (val > max) {
+      max = val;
+    }
+    if (val < min) {
+      min = val;
     }
   }
-  const max = Math.max(...arr);
-  return max;
+
+  return max + min;
 }
 
 const QueOne = () => {
-  const n = 5;
-  const m = 3;
-  const nums = [
-    [1, 2, 100],
-    [2, 5, 100],
-    [3, 4, 100],
-  ];
-  const max = getMaxfromArray(n, m, nums);
-  return <div>question one res = {max}</div>;
+  const link =
+    "https://www.geeksforgeeks.org/problems/max-min/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=bottom_sticky_on_article";
+  const nums: number[] = [4, 17, -5, 6, -8];
+  const res = getSumOfMinMax(nums);
+  return (
+    <div>
+      question one result = {res} (
+      <span style={{ color: "green" }}>
+        link of question-<a href={link}>link</a>
+      </span>
+      )
+    </div>
+  );
 };
 
 export default QueOne;

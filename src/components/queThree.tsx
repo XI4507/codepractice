@@ -1,26 +1,24 @@
 import React from "react";
 
-function reverseWord(str: string): string {
-  //Your code here
-  let arr = str.split("");
-  let i = 0;
-  let j = arr.length - 1;
-  while (i < j) {
-    let temp = arr[i];
-    arr[i] = arr[j];
-    arr[j] = temp;
-    i++;
-    j--;
+var maxSubArray = function (nums: number[]): number {
+  let max = nums[0];
+  for (let i = 0; i < nums.length; i++) {
+    let subArraySum = 0;
+    for (let j = i; j < nums.length; j++) {
+      subArraySum += nums[j];
+      max = Math.max(max, subArraySum);
+    }
   }
-  str = arr.join("");
-  return str;
-}
+  return max;
+};
+
 const QueThree = () => {
-  const link = "https://www.geeksforgeeks.org/problems/reverse-a-string/1";
-  const res = reverseWord("rakesh");
+  const link: string = "https://leetcode.com/problems/maximum-subarray/";
+  const nums: number[] = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
+  const bruteForceRes: number = maxSubArray(nums);
   return (
     <div>
-      question three result = {res} (
+      question three result using BruteForce approach= {bruteForceRes} (
       <span style={{ color: "green" }}>
         link of question-<a href={link}>link</a>
       </span>

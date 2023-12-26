@@ -1,3 +1,4 @@
+import QueFive from "./components/queFive";
 import QueFour from "./components/queFour";
 import QueOne from "./components/queOne";
 import QueThree from "./components/queThree";
@@ -27,6 +28,9 @@ const App = () => {
         </li>
         <li>
           <QueFour/>
+        </li>
+        <li>
+          <QueFive/>
         </li>
       </ol>
     </div>

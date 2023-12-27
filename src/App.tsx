@@ -4,7 +4,7 @@ import QueFour from "./components/queFour";
 import QueOne from "./components/queOne";
 import QueThree from "./components/queThree";
 import QueTwo from "./components/queTwo";
-
+import RecOne from "./recursion/recOne";
 
 const App = () => {
   const questionsLink =
@@ -19,22 +19,29 @@ const App = () => {
       </h4>
       <ol>
         <li>
-          <QueOne/>
+          <QueOne />
         </li>
         <li>
-          <QueTwo/>
+          <QueTwo />
         </li>
         <li>
-          <QueThree/>
+          <QueThree />
         </li>
         <li>
-          <QueFour/>
+          <QueFour />
         </li>
         <li>
-          <QueFive/>
+          <QueFive />
         </li>
         <li>
-          <Six/>
+          <Six />
+        </li>
+      </ol>
+      <hr />
+      <h2>Recursion Questions</h2>
+      <ol>
+        <li>
+          <RecOne />
         </li>
       </ol>
     </div>

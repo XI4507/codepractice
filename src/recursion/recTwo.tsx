@@ -13,7 +13,7 @@ const RecTwo = () => {
   const res = fibonacci(n);
   return (
     <p>
-      {n}th term of fibonacci series is {res}
+      {n}th term of fibonacci series is : {res}
     </p>
   );
 };

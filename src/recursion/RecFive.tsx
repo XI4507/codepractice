@@ -1,14 +1,16 @@
 //sorted an array using recursion
 
-import React from "react";
-
 function insert(arr: number[], temp: number): number[] {
-  let i = arr.length - 1;
-  while (i >= 0 && arr[i] > temp) {
-    arr[i + 1] = arr[i];
-    i--;
+  if (arr.length === 0 || arr[0] >= temp) {
+    arr.unshift(temp);
+    return arr;
+  } else if (arr[arr.length - 1] <= temp) {
+    arr.push(temp);
+    return arr;
   }
-  arr[i + 1] = temp;
+  const temp1: number = arr.pop()!;
+  arr = insert(arr, temp);
+  arr.push(temp1);
   return arr;
 }
 

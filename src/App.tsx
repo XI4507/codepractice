@@ -6,6 +6,7 @@ import QueThree from "./components/queThree";
 import QueTwo from "./components/queTwo";
 import RecFive from "./recursion/RecFive";
 import RecFour from "./recursion/RecFour";
+import RecSix from "./recursion/RecSix";
 import RecThree from "./recursion/RecThree";
 import RecOne from "./recursion/recOne";
 import RecTwo from "./recursion/recTwo";
@@ -58,6 +59,9 @@ const App = () => {
         </li>
         <li>
           <RecFive/>
+        </li>
+        <li>
+          <RecSix/>
         </li>
       </ol>
     </div>

@@ -16,7 +16,7 @@ const RecNine = () => {
     }
     
     const unsortedArray = [64, 34, 25, 12, 22, 11, 90];
-    const sortedArray = bubbleSort(unsortedArray);
+    const sortedArray = bubbleSort([...unsortedArray]);
     
   return <div>{`before sorting ${unsortedArray} after sorting ${sortedArray} using bubble sort`}</div>;
 };

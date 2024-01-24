@@ -1,4 +1,3 @@
-import React from "react";
 
 function countDigits(num: number): number {
   if (num < 10) {

@@ -10,6 +10,7 @@ import RecFour from "./recursion/RecFour";
 import RecSeven from "./recursion/RecSeven";
 import RecSix from "./recursion/RecSix";
 import RecThree from "./recursion/RecThree";
+import RecNine from "./recursion/recNine";
 import RecOne from "./recursion/recOne";
 import RecTwo from "./recursion/recTwo";
 
@@ -70,6 +71,9 @@ const App = () => {
         </li>
         <li>
           <RecEight />
+        </li>
+        <li>
+          <RecNine />
         </li>
       </ol>
     </div>

@@ -11,7 +11,7 @@ const RecEight = () => {
   const reversedString = reverseString(originalString);
   return (
     <div>
-      <p>{`original string is ${originalString} and reverse is ${reversedString}`}</p>
+      <p>{`original string  ${originalString} and reverse is ${reversedString}`}</p>
     </div>
   );
 };

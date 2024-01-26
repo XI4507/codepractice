@@ -1,3 +1,4 @@
+import Ten from "./components/10";
 import Six from "./components/6";
 import QueFive from "./components/queFive";
 import QueFour from "./components/queFour";
@@ -43,6 +44,9 @@ const App = () => {
         </li>
         <li>
           <Six />
+        </li>
+        <li>
+          <Ten />
         </li>
       </ol>
       <hr />

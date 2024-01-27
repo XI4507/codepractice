@@ -1,4 +1,5 @@
 import Ten from "./components/10";
+import Eleven from "./components/11";
 import Six from "./components/6";
 import QueFive from "./components/queFive";
 import QueFour from "./components/queFour";
@@ -47,6 +48,9 @@ const App = () => {
         </li>
         <li>
           <Ten />
+        </li>
+        <li>
+          <Eleven />
         </li>
       </ol>
       <hr />

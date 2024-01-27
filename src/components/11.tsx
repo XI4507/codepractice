@@ -28,10 +28,11 @@ function trap(height: number[]): number {
 const Eleven = () => {
   const height = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1];
   const result = trap(height);
-  const link ="https://leetcode.com/problems/trapping-rain-water/description/";
+  const link = "https://leetcode.com/problems/trapping-rain-water/description/";
   return (
     <div>
-      {`${result} units of rainwater cann be tapped. `}(
+      {`${result} units of rainwater can be tapped for the given height =[${height}] `}
+      (
       <span style={{ color: "green" }}>
         link of question-<a href={link}>link</a>
       </span>
